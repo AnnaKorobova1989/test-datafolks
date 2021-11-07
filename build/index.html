@@ -1,13 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="page__body">
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Реализованные проекты</h1>
+      <p class="header__text">Коммуникационное агентство – часть многофункционального холдинга, объединяющего различные компании на территории России и ближнего зарубежья. </p>
+      <p class="header__text">Наши подходы к организации бизнеса и имеющиеся ресурсы позволяют одинаково эффективно обеспечивать реализацию как крупномасштабных федеральных или международных проектов, так и решать небольшие локальные задачи. Мы находимся в постоянном развитии, расширяя и укрепляя имеющиеся бизнес-направления, а также формируя новые.</p>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <ul class="main__list">
+        <li class="main__item">
+          <a class="main__link modal__link" href="#modal">
+            <img src="img/main-card.jpg" alt="" width="550" height="577">
+            <p>Республика Саха</p>
+          </a>
+        </li>
+        <li class="main__item">
+          <a class="main__link modal__link" href="#modal-2">
+            <img src="img/main-card2.jpg" alt="" width="550" height="577">
+            <p>Газпром</p>
+          </a>
+        </li>
+        <li class="main__item">
+          <a class="main__link modal__link" href="#modal-3">
+            <img src="img/main-card3.jpg" alt="" width="550" height="577">
+            <p>Nokia</p>
+          </a>
+        </li>
+      </ul>
+      <button class="main__button" type="button">Загрузить еще</button>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__contact-block">
+        <h2 class="footer__title">Контакты</h2>
+        <p>Коммуникационное агентство</p>
+        <p>344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12
+          Бизнес–центр «Рост», оф. 104</p>
+        <div class="footer__feedback">
+          <div class="footer__phones">
+            <a href="tel:+78613001128">+7 (861) 300-11-28</a>
+            <a href="tel:+78613001152">+7 (861) 300-11-52</a>
+            <a href="tel:+78613001152">+7 (861) 300-11-52</a>
+          </div>
+          <div class="footer__mail">
+            <h3>Email</h3>
+            <a href="mailto:info@example.com">info@example.com</a>
+            <a href="#">Facebook.com/exampleagency</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__form-block callback-form">
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="name">Полное имя</label>
+          <input id="name" type="text" name="name" placeholder="Полное имя" pattern="[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?" required="">
+          <label class="visually-hidden" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="E-mail" required="">
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^(\+7)\([0-9]{3}\)[0-9]{3}[-][0-9]{2}[-][0-9]{2}$" required="">
+          <label class="visually-hidden" for="task">Опишите задачу</label>
+          <textarea name="task" id="task" cols="30" placeholder="Пожалуйста, опишите задачу"></textarea>
+          <a href="#">Политика обработки персональных данных</a>
+          <button class="callback-form__button" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="modal">
+    <div class="modal__body">
+      <div class="modal__content">
+        <a href="" class="modal__close close-modal">x</a>
+        <div class="modal__title">Республика Саха</div>
+          <div class="modal__image">
+            <img src="img/main-card.jpg" width="550" height="577" alt="Республика Саха">
+          </div>
+        <div class="modal__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, voluptates nulla. Accusantium nesciunt iste at minus illo voluptates laborum, provident earum animi a voluptas sapiente accusamus temporibus nam, fuga quasi?</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-2">
+    <div class="modal__body">
+      <div class="modal__content">
+        <a href="" class="modal__close close-modal">x</a>
+        <div class="modal__title">Газпром</div>
+        <div class="modal__image">
+          <img src="img/main-card2.jpg" width="550" height="577" alt="">
+        </div>
+        <div class="modal__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, voluptates nulla. Accusantium nesciunt iste at minus illo voluptates laborum, provident earum animi a voluptas sapiente accusamus temporibus nam, fuga quasi?</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-3">
+    <div class="modal__body">
+      <div class="modal__content">
+        <a href="" class="modal__close close-modal">x</a>
+        <div class="modal__title">NOKIA</div>
+        <div class="modal__image">
+          <img src="img/main-card3.jpg" width="550" height="577" alt="">
+        </div>
+        <div class="modal__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, voluptates nulla. Accusantium nesciunt iste at minus illo voluptates laborum, provident earum animi a voluptas sapiente accusamus temporibus nam, fuga quasi?</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

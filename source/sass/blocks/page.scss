@@ -1,0 +1,25 @@
+.page {
+  height: 100%;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+}
+
+.page__body.lock {
+  overflow: hidden;
+}

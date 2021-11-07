@@ -1,0 +1,46 @@
+.main__list {
+  @include list-reset;
+  display: flex;
+  margin-top: 122px;
+  margin-bottom: 83px;
+  margin-left: -32px;
+}
+
+.main__item {
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 15px;
+    left: 4px;
+    width: 100%;
+    font-family: "Dinpro Bold";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+  }
+}
+
+.main__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 16px 107px;
+  margin-bottom: 105px;
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid $blue-button;
+  font-family: "Dinpro Bold";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $blue-button;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    background-color: $blue-button;
+    color: $white;
+  }
+}
+

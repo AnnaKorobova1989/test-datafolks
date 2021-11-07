@@ -1,0 +1,54 @@
+.footer {
+  background-color: $total-blue;
+  color: $white;
+  padding-top: 30px;
+  padding-bottom: 95px;
+  margin-top: auto;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1345px;
+}
+
+.footer__contact-block {
+  font-family: "Myriad Pro";
+  font-size: 18px;
+}
+
+.footer__title {
+  font-family: "Dinpro Bold";
+  font-size: 45px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.footer__feedback {
+  display: flex;
+}
+
+.footer__phones {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+
+  a {
+    @include link-reset;
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    color: $white;
+  }
+}
+
+.footer__form-block {
+  border: 5px solid $grey;
+  padding: 38px;
+  max-width: 555px;
+  width: 555px;
+  box-sizing: border-box;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}

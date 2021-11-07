@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Dinpro";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/dinpro.woff2") format("woff2"),
+    url("../fonts/dinpro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Dinpro Bold";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/dinpro-bold.woff2") format("woff2"),
+    url("../fonts/dinpro-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
+    url("../fonts/MyriadPro-Regular.woff") format("woff");
+}

@@ -8,7 +8,7 @@
     color: rgba($white, 0.7);
 
     &:hover {
-      box-shadow: 0 0 1px 1px rgba($white, 0.5);
+      background-color: $blue;
     }
 
     &::placeholder {
@@ -28,7 +28,7 @@
     min-height: 65px;
 
     &:hover {
-      box-shadow: 0 0 1px 1px rgba($white, 0.5);
+      background-color: $blue;
     }
 
     &::placeholder {

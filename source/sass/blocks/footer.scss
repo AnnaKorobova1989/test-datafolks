@@ -8,8 +8,12 @@
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   max-width: 1345px;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
 }
 
 .footer__contact-block {
@@ -31,7 +35,7 @@
 .footer__phones {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 40px;
 
   a {
     @include link-reset;
@@ -41,14 +45,49 @@
   }
 }
 
+.footer__mail {
+  position: relative
+}
+
+.footer__mail::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 105px;
+  background-color: $blue;
+  top: 0;
+  left: -10px;
+}
+
+.footer__mail a {
+  @include link-reset;
+  display: block;
+  color: $blue;
+}
+
+.footer__contact-block {
+  align-self: center;
+  @media (max-width: 1050px) {
+    order: 2;
+  }
+}
+
 .footer__form-block {
   border: 5px solid $grey;
   padding: 38px;
   max-width: 555px;
   width: 555px;
+  margin-left: 20px;
   box-sizing: border-box;
   form {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (max-width: 1050px) {
+    min-width: 900px;
+    margin-left: 0;
+    align-self: center;
+    order: 0;
   }
 }

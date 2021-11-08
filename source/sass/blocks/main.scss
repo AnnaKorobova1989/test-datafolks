@@ -3,11 +3,20 @@
   display: flex;
   margin-top: 122px;
   margin-bottom: 83px;
-  margin-left: -32px;
+  margin-left: 0;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main__item {
   position: relative;
+
+  @media (max-width: 1050px) {
+    max-width: 750px;
+  }
 
   p {
     position: absolute;
